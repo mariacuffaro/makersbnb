@@ -15,9 +15,34 @@
 ```
 As a user
 I want to sign up to makers BnB
-So that I can use the app as host
+So that I can use the app as a host or customer
 
-As a user
+As a host
 I want to list a new space
 So that customers can see my property
+
+As a host
+I want to list multiple spaces
+So that I can advertise all my spaces
+
+As a host
+I want to add all space details
+So that customers have enough information to choose my space
+
+As a host
+I want to enter in available dates
+So that my property is not double booked
+
+As a customer
+I want to make a request
+So that I can hire a space
+
+As a host
+I want to be able to approve a request
+So that the space is booked
+
+
+
+
+
 ```
