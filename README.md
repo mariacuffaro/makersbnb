@@ -19,7 +19,7 @@ So that I can use the app as a host or customer
 
 As a user
 I want to log in
-So that I can use the app as a host or customer 
+So that I can use the app as a host or customer
 
 As a host
 I want to list a new space
@@ -45,8 +45,7 @@ As a host
 I want to be able to approve a request
 So that the space is booked
 
-
-
-
-
 ```
+##Domain Model
+
+![Domain Model](Domain_model.png)
