@@ -49,3 +49,18 @@ So that the space is booked
 ##Domain Model
 
 ![Domain Model](Domain_model.png)
+
+## Setting up the database
+
+**Enter postgresql and create the database**
+* $>psql
+* =# CREATE DATABASE "makersbnb";
+* =# CREATE DATABASE "makersbnb_test";
+
+**In irb run the following commands to create the tables**
+* $>irb
+* require './database_connection_setup.rb'
+* setup_test_connection
+* setup_prod_connection
+* drop_tables
+* create_tables
