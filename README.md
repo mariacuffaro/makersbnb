@@ -15,5 +15,9 @@
 ```
 As a user
 I want to sign up to makers BnB
-So that I can list my property
+So that I can use the app as host
+
+As a user
+I want to list a new space
+So that customers can see my property
 ```
