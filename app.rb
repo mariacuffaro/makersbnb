@@ -23,9 +23,19 @@ enable :sessions
   end
 
   get '/login' do
-    flash[:notice] = 'successfully signed up'
     erb :login
   end
+
+  post '/login' do
+
+  user = User.find_by_email(params[:email])
+  if(user && user.authenticate(params[:password]))
+    session[:user_id] = user.id
+  redirect('/spaces')
+else
+  redirect('/')
+  end
+end
 
   get '/spaces' do
     @first_name = session[:first_name]
