@@ -10,6 +10,10 @@ gem 'capybara'
 gem 'rack'
 gem 'rubocop'
 gem 'activerecord'
+gem 'rake'
+gem 'sinatra-flash'
+gem 'pg'
+
 
 
 # gem "rails"

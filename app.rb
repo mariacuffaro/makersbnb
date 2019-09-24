@@ -1,4 +1,10 @@
 require 'sinatra'
+require 'rake'
+require 'sinatra/activerecord/rake'
+require_relative 'database_connection_setup.rb'
+require 'sinatra/flash'
+require './lib/user.rb'
+
 
 class Makersbnb < Sinatra::Base
 enable :sessions
@@ -7,13 +13,18 @@ enable :sessions
     erb :index
   end
 
-  post '/spaces' do
-    session[:first_name] = params[:first_name]
-    session[:last_name] = params[:last_name]
-    session[:email] = params[:email]
-    session[:password] = params[:password]
+  post '/signup' do
+    User.create(first_name: "#{params['first_name']}",
+      last_name: "#{params['last_name']}",
+      email: "#{params['email']}",
+      password: "#{params['password']}")
 
-    redirect('/spaces')
+    redirect('/login')
+  end
+
+  get '/login' do
+    flash[:notice] = 'successfully signed up'
+    erb :login
   end
 
   get '/spaces' do

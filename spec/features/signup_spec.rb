@@ -10,8 +10,7 @@ require './spec/spec_helper.rb'
   feature 'form submits to new profile page' do
     scenario 'user fills in the form and clicks submit' do
       visit('/')
-      fill_in 'first_name', with: 'Neil'
       click_button 'Signup'
-      expect(page).to have_content 'Hello Neil'
+      expect(page).to have_content 'successfully signed up'
     end
   end
