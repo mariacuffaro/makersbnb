@@ -3,12 +3,16 @@
 source "https://rubygems.org"
 
 ruby '2.6.3'
-gem 'rspec'
 gem 'sinatra'
 gem 'sinatra-activerecord'
 gem 'capybara'
 gem 'rack'
-gem 'rubocop'
 
 
+group :test do
+  gem 'rspec'
+  gem 'rubocop'
+  gem 'simplecov', require: false
+  gem 'simplecov-console', require: false
+end
 # gem "rails"
