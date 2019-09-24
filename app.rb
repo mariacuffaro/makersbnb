@@ -10,8 +10,13 @@ get '/spaces' do
   erb :spaces
 end
 
+post '/spaces' do
+  erb :spaces
+end
+
 get '/spaces/new' do
-redirect '/'
+  erb :spaces_new
+# redirect '/'
 end
 
 
