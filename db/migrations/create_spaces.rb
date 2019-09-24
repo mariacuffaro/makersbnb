@@ -6,6 +6,7 @@ class CreateSpace < ActiveRecord::Migration[6.0]
       table.string :price, :null => false
       table.date :available_from, :date => false
       table.date :available_to, :null => false
+      table.timestamp :created_at, :null => false
     end
   end
 end

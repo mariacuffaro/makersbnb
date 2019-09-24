@@ -13,7 +13,7 @@ class MakersBnb <  Sinatra::Base
   end
 
   get '/spaces' do
-    @spaces = Space.all()
+    @spaces = Space.all.order(created_at: :desc)
     erb :spaces
   end
 
@@ -23,12 +23,11 @@ class MakersBnb <  Sinatra::Base
       price: "#{params['price_per_night']}",
       available_from: "#{params['available_from']}",
       available_to: "#{params['available_to']}")
-      @spaces = Space.all()
+      @spaces = Space.all.order(created_at: :desc)
       erb :spaces
     end
 
     get '/spaces/new' do
       erb :spaces_new
-      # redirect '/'
     end
   end

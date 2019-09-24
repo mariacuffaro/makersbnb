@@ -1,13 +1,19 @@
+require_relative './listing_helper.rb'
+
 feature 'list a space' do
   scenario 'be able to list a space on makersbnb' do
-    visit '/spaces'
-    click_button 'list_space'
-    fill_in 'name', with: 'Ed'
-    fill_in 'description', with: 'City centre apartment'
-    fill_in 'price_per_night', with: '£50'
-    fill_in 'available_from', with: '12/12/2019'
-    fill_in 'available_to', with: '30/02/2020'
-    click_button 'list_space'
+    create_listing
+    # save_and_open_page
     expect(page).to  have_content('City centre apartment')
    end
-  end
+end
+feature 'display listings' do
+  scenario 'in reverse chronological order' do
+    create_listing
+    create_another_listing
+    # save_and_open_page
+    p index_of_first_listing = page.body.index('City centre apartment')
+    p index_of_second_listing = page.body.index('Cosy country cottege')
+    expect(index_of_second_listing).to be < index_of_first_listing
+   end
+end
