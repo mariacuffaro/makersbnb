@@ -4,7 +4,7 @@ require './db/migrations/create_spaces'
 
 
 def setup_test_connection
-  p 'database setup running'
+  'database setup running'
   ActiveRecord::Base.establish_connection(
     adapter: 'postgresql',
     host: 'localhost',

@@ -1,14 +1,13 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/student/Projects/week6/makersbnb/spec/backend/feature_tests/listings_feature_spec.rb": [
+      "/Users/student/Desktop/PROJECTS /makersbnb/spec/backend/feature_tests/listings_feature_spec.rb": [
         1,
         null,
         1,
         1,
         1,
         null,
-        1,
         1,
         null,
         null,
@@ -23,7 +22,7 @@
         null,
         null
       ],
-      "/Users/student/Projects/week6/makersbnb/spec/backend/feature_tests/listing_helper.rb": [
+      "/Users/student/Desktop/PROJECTS /makersbnb/spec/backend/feature_tests/listing_helper.rb": [
         1,
         2,
         2,
@@ -47,6 +46,6 @@
         null
       ]
     },
-    "timestamp": 1569338905
+    "timestamp": 1569339453
   }
 }

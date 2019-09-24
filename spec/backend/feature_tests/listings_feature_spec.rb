@@ -12,8 +12,8 @@ feature 'display listings' do
     create_listing
     create_another_listing
     # save_and_open_page
-    p index_of_first_listing = page.body.index('City centre apartment')
-    p index_of_second_listing = page.body.index('Cosy country cottege')
+    index_of_first_listing = page.body.index('City centre apartment')
+    index_of_second_listing = page.body.index('Cosy country cottege')
     expect(index_of_second_listing).to be < index_of_first_listing
    end
 end
