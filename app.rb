@@ -18,7 +18,6 @@ enable :sessions
       last_name: "#{params['last_name']}",
       email: "#{params['email']}",
       password: "#{params['password']}")
-
     redirect('/login')
   end
 
@@ -27,14 +26,11 @@ enable :sessions
   end
 
   post '/login' do
+ p params
 
-  user = User.find_by_email(params[:email])
-  if(user && user.authenticate(params[:password]))
-    session[:user_id] = user.id
-  redirect('/spaces')
-else
-  redirect('/')
-  end
+ p user = User.find_by(email: 'neildcampbell@hotmail.com')
+
+"I'm here"
 end
 
   get '/spaces' do
