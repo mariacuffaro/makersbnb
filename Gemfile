@@ -9,6 +9,7 @@ gem 'sinatra-activerecord'
 gem 'capybara'
 gem 'rack'
 gem 'rubocop'
+gem 'activerecord'
 
 
 # gem "rails"
