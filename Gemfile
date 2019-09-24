@@ -7,6 +7,7 @@ gem 'sinatra'
 gem 'sinatra-activerecord'
 gem 'capybara'
 gem 'rack'
+gem 'pg'
 
 
 group :test do

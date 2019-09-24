@@ -8,7 +8,7 @@
 
 <body>
 
-
+  
 
   <table style="height: 100%; left: 0; position: absolute; text-align: center; width: 100%;">
     <tr>
@@ -18,6 +18,12 @@
           <button type='submit' name='list_space'>List a Space</button>
         </form>
         <p>City centre apartment</p>
+
+
+        <ul><%@spaces.each do |space|%>
+          <%=space.description%><br>
+          <%end%>
+        </ul>
 
       </td>
     </tr>
