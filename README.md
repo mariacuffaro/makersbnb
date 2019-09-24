@@ -17,6 +17,10 @@ As a user
 I want to sign up to makers BnB
 So that I can use the app as a host or customer
 
+As a user
+I want to log in
+So that I can use the app as a host or customer
+
 As a host
 I want to list a new space
 So that customers can see my property
@@ -41,8 +45,22 @@ As a host
 I want to be able to approve a request
 So that the space is booked
 
-
-
-
-
 ```
+##Domain Model
+
+![Domain Model](Domain_model.png)
+
+## Setting up the database
+
+**Enter postgresql and create the database**
+* $>psql
+* =# CREATE DATABASE "makersbnb";
+* =# CREATE DATABASE "makersbnb_test";
+
+**In irb run the following commands to create the tables**
+* $>irb
+* require './database_connection_setup.rb'
+* setup_test_connection
+* setup_prod_connection
+* drop_tables
+* create_tables
