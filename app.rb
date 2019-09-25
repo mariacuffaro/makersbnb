@@ -11,13 +11,14 @@ Dir["#{current_dir}/models/*.rb"].each { |file| require file }
 
 class MakersBnb < Sinatra::Base
 enable :sessions
+register Sinatra::Flash
 
   get '/' do
     erb :index
   end
 
   post '/signup' do
-  p  bcrypt_password = BCrypt::Password.create("#{params['password']}")
+   bcrypt_password = BCrypt::Password.create("#{params['password']}")
 
     User.create(first_name: "#{params['first_name']}",
       last_name: "#{params['last_name']}",
@@ -34,14 +35,12 @@ enable :sessions
   end
 
   post '/login' do
-
-    # @user = User.find_by(email: "#{params['email']}")
-    # if params['password'] == BCrypt::Password.new(@user.password)
-
-
-
-  redirect '/spaces'
- # end
+     @user = User.find_by(email: "#{params['email']}")
+    if BCrypt::Password.new(@user.password) == params['password']
+      redirect '/spaces'
+    else flash[:notice] = "Credentials Incorrect"
+      redirect '/login'
+    end
 end
 
 get '/spaces' do
