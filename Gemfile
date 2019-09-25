@@ -7,12 +7,10 @@ gem 'sinatra-activerecord'
 gem 'capybara'
 gem 'rack'
 gem 'pg'
-<<<<<<< HEAD
-
-=======
 gem 'rake'
 gem 'sinatra-flash'
->>>>>>> user-sign-up
+gem 'bcrypt'
+
 
 group :test do
  gem 'rspec'

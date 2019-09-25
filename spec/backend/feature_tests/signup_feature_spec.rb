@@ -11,7 +11,8 @@ feature 'Sign up' do
     expect(page).to have_content('Log in to Makersbnb')
   end
 end
-  # 
+
+  #
   # feature 'form submits to new profile page' do
   #   scenario 'user fills in the form and clicks submit' do
   #     visit('/')

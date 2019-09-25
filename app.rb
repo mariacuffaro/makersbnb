@@ -3,7 +3,8 @@ require 'rake'
 require 'sinatra/activerecord/rake'
 require './database_connection_setup.rb'
 require 'sinatra/flash'
-require './lib/user.rb'
+require 'bcrypt'
+# require './lib/user.rb'
 
 current_dir = Dir.pwd
 Dir["#{current_dir}/models/*.rb"].each { |file| require file }
@@ -16,21 +17,32 @@ enable :sessions
   end
 
   post '/signup' do
+  p  bcrypt_password = BCrypt::Password.create("#{params['password']}")
+
     User.create(first_name: "#{params['first_name']}",
       last_name: "#{params['last_name']}",
       email: "#{params['email']}",
-      password: "#{params['password']}")
+      password: bcrypt_password)
+
+
     redirect('/login')
   end
 
   get '/login' do
+
     erb :login
   end
 
   post '/login' do
-  user = User.find_by(email: 'neildcampbell@hotmail.com')
+
+    # @user = User.find_by(email: "#{params['email']}")
+    # if params['password'] == BCrypt::Password.new(@user.password)
+
+
+
   redirect '/spaces'
- end
+ # end
+end
 
 get '/spaces' do
  @spaces = Space.all.order(created_at: :desc)

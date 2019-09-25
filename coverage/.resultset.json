@@ -48,7 +48,15 @@
       "/Users/student/Desktop/PROJECTS /makersbnb/spec/backend/feature_tests/login_feature_spec.rb": [
         1,
         1,
+        null,
+        null,
         1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
         1,
         1,
         1,
@@ -78,9 +86,19 @@
         null,
         null,
         null,
+        null,
+        null
+      ],
+      "/Users/student/Desktop/PROJECTS /makersbnb/spec/backend/unit_tests/user_spec.rb": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
         null
       ]
     },
-    "timestamp": 1569405691
+    "timestamp": 1569410742
   }
 }
