@@ -53,7 +53,7 @@ So that the space is booked
 ## Setting up the database
 
 **Enter postgresql and create the database**
-* $>psql
+* $>psql postgres
 * =# CREATE DATABASE "makersbnb";
 * =# CREATE DATABASE "makersbnb_test";
 
