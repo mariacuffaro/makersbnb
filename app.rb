@@ -28,12 +28,9 @@ enable :sessions
   end
 
   post '/login' do
- p params
-
- p user = User.find_by(email: 'neildcampbell@hotmail.com')
-
-"I'm here"
-end
+  user = User.find_by(email: 'neildcampbell@hotmail.com')
+  redirect '/spaces'
+ end
 
 get '/spaces' do
  @spaces = Space.all.order(created_at: :desc)

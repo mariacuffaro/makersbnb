@@ -3,7 +3,6 @@
     "coverage": {
       "/Users/student/Desktop/PROJECTS /makersbnb/spec/backend/feature_tests/listings_feature_spec.rb": [
         1,
-<<<<<<< HEAD
         null,
         1,
         1,
@@ -12,38 +11,17 @@
         1,
         null,
         null,
-=======
         1,
         1,
         1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
+        1,
         null,
-        null
-      ],
-      "/Users/student/Desktop/PROJECTS /makersbnb/spec/features/login_spec.rb": [
-        1,
->>>>>>> user-sign-up
-        1,
-        1,
-        1,
-        1,
-<<<<<<< HEAD
-        null,
-=======
->>>>>>> user-sign-up
         1,
         1,
         1,
         null,
         null
       ],
-<<<<<<< HEAD
       "/Users/student/Desktop/PROJECTS /makersbnb/spec/backend/feature_tests/listing_helper.rb": [
         1,
         2,
@@ -55,10 +33,6 @@
         2,
         2,
         null,
-=======
-      "/Users/student/Desktop/PROJECTS /makersbnb/spec/features/signup_spec.rb": [
-        1,
->>>>>>> user-sign-up
         null,
         1,
         1,
@@ -69,25 +43,44 @@
         1,
         1,
         1,
-<<<<<<< HEAD
+        null
+      ],
+      "/Users/student/Desktop/PROJECTS /makersbnb/spec/backend/feature_tests/login_feature_spec.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/student/Desktop/PROJECTS /makersbnb/spec/backend/feature_tests/signup_feature_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
         null
       ]
     },
-    "timestamp": 1569339453
-=======
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
-      ]
-    },
-    "timestamp": 1569403149
->>>>>>> user-sign-up
+    "timestamp": 1569405691
   }
 }

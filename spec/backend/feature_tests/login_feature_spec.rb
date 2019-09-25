@@ -5,6 +5,6 @@ feature 'login' do
     fill_in 'email', with:'test@example.com'
     fill_in 'password', with:'password123'
     click_button('login')
-    expect(page).to have_content("I'm here")
+    expect(page).to have_content("Book a Space")
   end
 end
