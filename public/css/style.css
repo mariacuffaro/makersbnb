@@ -1,0 +1,26 @@
+body {
+  background-color: white;
+
+}
+
+table {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  width: 100%
+
+}
+h1 {
+  font-style:
+}
+
+.center {
+  margin:auto;
+  width:50%;
+  border: 2px grey;
+  padding: 10px;
+  border-style: solid;
+    border-color: grey;
+      border-width: medium;
+}
