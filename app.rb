@@ -1,12 +1,12 @@
 require 'sinatra'
 require 'rake'
 require 'sinatra/activerecord/rake'
-require_relative 'database_connection_setup.rb'
+require './database_connection_setup.rb'
 require 'sinatra/flash'
 require './lib/user.rb'
 
 
-class Makersbnb < Sinatra::Base
+class MakersBnb < Sinatra::Base
 enable :sessions
 
   get '/' do
