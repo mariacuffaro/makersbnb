@@ -1,0 +1,57 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/student/Desktop/PROJECTS /makersbnb/spec/backend/feature_tests/listings_feature_spec.rb": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        null
+      ],
+      "/Users/student/Desktop/PROJECTS /makersbnb/spec/features/login_spec.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/student/Desktop/PROJECTS /makersbnb/spec/features/signup_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    "timestamp": 1569403149
+  }
+}
