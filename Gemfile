@@ -1,19 +1,21 @@
 # frozen_string_literal: true
-
 source "https://rubygems.org"
 
 ruby '2.6.3'
-gem 'rspec'
 gem 'sinatra'
 gem 'sinatra-activerecord'
 gem 'capybara'
 gem 'rack'
-gem 'rubocop'
-gem 'activerecord'
+gem 'pg'
 gem 'rake'
 gem 'sinatra-flash'
-gem 'pg'
 
+group :test do
+ gem 'rspec'
+ gem 'rubocop'
+ gem 'simplecov', require: false
+ gem 'simplecov-console', require: false
+end
 
 
 # gem "rails"
