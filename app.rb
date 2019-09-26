@@ -64,9 +64,19 @@ class MakersBnb < Sinatra::Base
           erb :spaces
         end
 
+      get '/spaces/id1' do
+        @space = Space.first
+
+        erb :property1
+      end
+
+      run! if app_file == $0
+    end
+
         get '/spaces/new' do
           erb :spaces_new
         end
 
         run! if app_file == $0
       end
+
