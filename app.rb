@@ -13,7 +13,7 @@ Dir["#{current_dir}/models/*.rb"].each { |file| require file }
 class MakersBnb < Sinatra::Base
   enable :sessions
   register Sinatra::Flash
-  
+
   get '/' do
     erb :index
   end
@@ -64,14 +64,13 @@ class MakersBnb < Sinatra::Base
           erb :spaces
         end
 
-      get '/spaces/id1' do
-        @space = Space.first
+        get '/spaces/:id' do
+          @space = Space.find_by(id: params[:id])
 
-        erb :property1
-      end
+          erb :property1
+        end
 
-      run! if app_file == $0
-    end
+
 
         get '/spaces/new' do
           erb :spaces_new
@@ -79,4 +78,3 @@ class MakersBnb < Sinatra::Base
 
         run! if app_file == $0
       end
-
