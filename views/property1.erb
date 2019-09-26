@@ -1,4 +1,12 @@
-<h1><%=@space.description%></h1>
-<h1><%=@space.price%></h1>
-<h1><%=@space.available_from%></h1>
-<h1><%=@space.available_to%></h1>
+<div class="card" style="width: 18rem;">
+ <img class="card-img-top" src="images/makersbnb_header2.jpg" alt="Card image cap">
+ <div class="card-body">
+   <h5 class="card-title"><%=@space.description%></h5>
+   <p class="card-text"><%=@space.price%><br>
+     <%=@space.available_from%>
+     <%=@space.available_to%>
+   </p>
+   <a href="#" class="btn btn-primary">Request booking</a>
+ </div>
+</div>
+public/images/makers.jpg
