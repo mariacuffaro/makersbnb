@@ -10,10 +10,10 @@
   <input type='text' placeholder='available to' name='end_date'required/>
   <button type='submit' name='list_spaces'>List Spaces</button>
 
- </form>
+</form>
 <ul><%@spaces.each do |space|%>
-<%=space.name%><br>
-<%=space.description%><br>
+  <%=space.name%><br>
+  <%=space.description%><br>
 
   <%end%>
 </ul>
