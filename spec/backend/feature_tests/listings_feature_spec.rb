@@ -3,9 +3,16 @@ require_relative './listing_helper.rb'
 feature 'list a space' do
   scenario 'be able to list a space on makersbnb' do
     create_listing
-    # save_and_open_page
     expect(page).to  have_content('City centre apartment')
    end
+end
+
+feature 'allows to list spaces only for users who are logged in' do
+  scenario 'a user who is not logged in, can not list spaces' do
+    visit ('/spaces')
+    click_button 'list_space'
+    expect(page).to have_content('Log in to Makersbnb')
+  end
 end
 
 feature 'display listings' do
