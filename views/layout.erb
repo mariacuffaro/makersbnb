@@ -2,18 +2,32 @@
 <html>
 <head>
   <link rel="stylesheet" type="text/css" href="/css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <meta charset="UTF-8">
   <title>MakersBnB</title>
 </head>
 <body>
-  <table>
-    <tr>
-      <td>
-        <div class="center">
-          <%= yield %>
-        </div>
-      </td>
-    </tr>
-  </table>
+  <div class="container">
+    <div class="row">    
+      <div class="col-sm-12">
+        <table>
+          <tr>
+            <td>
+              <div class="center">
+                <div class="jumbotron text-center">
+                  <h1>MakersBnB</h1>
+                  <p>Welcome to MakersBnB</p>
+                  <!-- <img src="images/makers.jpg"> -->
+                </div>
+                <%= yield %>
+              </div>
+            </td>
+          </tr>
+        </table>
+
+      </div>
+    </div>
+  </div>
+
 </body>
 </html>
