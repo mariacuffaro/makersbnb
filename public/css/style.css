@@ -24,3 +24,6 @@ h1 {
     border-color: grey;
       border-width: medium;
 }
+input:required {
+
+}

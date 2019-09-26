@@ -1,7 +1,7 @@
 <%= flash[:notice] %>
 <h1>Log in to Makersbnb</h1>
 <form action = '/login' method="post">
-  Email:<br><input type="text" name="email" ><br>
-  Password:<br><input type="password" name="password"><br>
+  Email:<br><input type="text" name="email" required><br>
+  Password:<br><input type="password" name="password" required><br>
   <input type="submit" name="login" value="Sign in">
 </form>
