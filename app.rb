@@ -57,6 +57,7 @@ class MakersBnb < Sinatra::Base
         @spaces = Space.all.order(created_at: :desc)
         erb :spaces
       end
+
       get '/spaces/new' do
         erb :spaces_new
       end
