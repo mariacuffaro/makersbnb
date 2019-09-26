@@ -4,8 +4,12 @@
   <button type='submit' name='list_space'>List a Space</button><br>
 </form>
 <form action='/spaces' method='post'>
-  <input type='text' placeholder='available from' name='start_date'required/>
-  <input type='text' placeholder='available to' name='end_date'required/>
+  <p>available from <input type="text" id="datepicker1" name='start_date' required</p>
+  <p>available to <input type="text" id="datepicker2" name='end_date' required></p>
+  <!-- <input type='text' placeholder='available from' name='start_date'required/>
+  <input type='text' placeholder='available to' name='end_date'required/> -->
+
+
   <button type='submit' name='list_spaces'>List Spaces</button>
 </form>
 <ul><%@spaces.each do |space|%>
