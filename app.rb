@@ -64,6 +64,11 @@ class MakersBnb < Sinatra::Base
           erb :spaces
         end
 
+        get '/spaces/new' do
+          erb :spaces_new
+        end
+
+
         get '/spaces/:id' do
           @space = Space.find_by(id: params[:id])
 
@@ -71,10 +76,6 @@ class MakersBnb < Sinatra::Base
         end
 
 
-
-        get '/spaces/new' do
-          erb :spaces_new
-        end
 
         run! if app_file == $0
       end
