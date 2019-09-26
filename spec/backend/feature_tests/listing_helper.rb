@@ -4,8 +4,8 @@ def create_listing
   fill_in 'name', with: 'Ed'
   fill_in 'description', with: 'City centre apartment'
   fill_in 'price_per_night', with: '£50'
-  fill_in 'available_from', with: '10/11/2019'
-  fill_in 'available_to', with: '30/01/2020'
+  fill_in 'available_from', with: '01/11/2019'
+  fill_in 'available_to', with: '01/12/2019'
   click_button 'list_space'
 end
 
