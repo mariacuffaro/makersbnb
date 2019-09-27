@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/student/Desktop/PROJECTS /makersbnb/spec/backend/feature_tests/booking_space_spec.rb": [
+      "/Users/Neil/Projects/Makers/week-6/MakersBNB/makersbnb/spec/backend/feature_tests/booking_space_spec.rb": [
         1,
         null,
         1,
@@ -12,7 +12,7 @@
         null,
         null
       ],
-      "/Users/student/Desktop/PROJECTS /makersbnb/spec/backend/feature_tests/listing_helper.rb": [
+      "/Users/Neil/Projects/Makers/week-6/MakersBNB/makersbnb/spec/backend/feature_tests/listing_helper.rb": [
         1,
         4,
         4,
@@ -35,7 +35,7 @@
         2,
         null
       ],
-      "/Users/student/Desktop/PROJECTS /makersbnb/spec/backend/feature_tests/listings_feature_spec.rb": [
+      "/Users/Neil/Projects/Makers/week-6/MakersBNB/makersbnb/spec/backend/feature_tests/listings_feature_spec.rb": [
         1,
         null,
         1,
@@ -66,7 +66,7 @@
         null,
         null
       ],
-      "/Users/student/Desktop/PROJECTS /makersbnb/spec/backend/feature_tests/login_feature_spec.rb": [
+      "/Users/Neil/Projects/Makers/week-6/MakersBNB/makersbnb/spec/backend/feature_tests/login_feature_spec.rb": [
         1,
         1,
         null,
@@ -102,7 +102,7 @@
         null,
         null
       ],
-      "/Users/student/Desktop/PROJECTS /makersbnb/spec/backend/feature_tests/signup_feature_spec.rb": [
+      "/Users/Neil/Projects/Makers/week-6/MakersBNB/makersbnb/spec/backend/feature_tests/signup_feature_spec.rb": [
         1,
         null,
         1,
@@ -126,7 +126,7 @@
         null,
         null
       ],
-      "/Users/student/Desktop/PROJECTS /makersbnb/spec/backend/unit_tests/user_spec.rb": [
+      "/Users/Neil/Projects/Makers/week-6/MakersBNB/makersbnb/spec/backend/unit_tests/user_spec.rb": [
         null,
         null,
         null,
@@ -136,6 +136,6 @@
         null
       ]
     },
-    "timestamp": 1569513446
+    "timestamp": 1569583450
   }
 }

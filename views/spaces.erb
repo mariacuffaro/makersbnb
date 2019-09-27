@@ -1,19 +1,35 @@
 
 <h1>Book a Space</h1><br>
+<div>
 <form action='/spaces/new'>
-  <button type='submit' name='list_space'>List a Space</button><br>
+  <button type='submit' name='list_space' class="btn btn-primary">List a Space</button><br>
 </form>
-<form action='/spaces' method='post'>
-  <p>available from <input type="text" id="datepicker1" name='start_date' required</p>
-  <p>available to <input type="text" id="datepicker2" name='end_date' required></p>
+</div><br>
+<form action='/spaces' method='post' class="form-inline">
+  <div class="form-group">
+  <p>available from <input type="text" id="datepicker1" name='start_date' class="form-control" style="width: 50%;margin:auto;" required</p>
+  </div>
+  <div class="form-group">
+  <p>available to <input type="text" id="datepicker2" name='end_date' class="form-control" style="width: 50%;margin:auto;" required></p>
+  </div><br>
   <!-- <input type='text' placeholder='available from' name='start_date'required/>
   <input type='text' placeholder='available to' name='end_date'required/> -->
 
+<div>
+  <button type='submit' name='list_spaces' class="btn btn-primary">List Spaces</button>
+  <br>
+  <%@spaces.each do |space|%>
+  <br>
+  <div class="card border-primary mb-3" style="max-width: 35rem;">
 
-  <button type='submit' name='list_spaces'>List Spaces</button>
+    <img src="/images/makers.jpg" class="card-img-top" alt="...">
+    <div class="card-body text-primary" >
+      <div class="card-header"><a href="/spaces/<%= space.id %>"><%=space.name%></a></div>
+      <h5 class="card-title"><%=space.description%></h5>
+      <p class="card-text">£<%=space.price%>.00</p>
+      <a href="#" class="btn btn-warning">Book it</a><br>
+    </div>
+  </div>
+    <%end%>
 </form>
-<ul><%@spaces.each do |space|%>
-  <a href="/spaces/<%= space.id %>"><%=space.name%></a><br>
-  <%=space.description%><br>
-  <%end%>
-</ul>
+</div><br>
