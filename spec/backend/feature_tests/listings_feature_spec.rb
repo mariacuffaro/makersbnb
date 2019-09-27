@@ -8,6 +8,14 @@ feature 'list a space' do
    end
 end
 
+feature 'allows to list spaces only for users who are logged in' do
+ scenario 'a user who is not logged in, can not list spaces' do
+   visit ('/spaces')
+   click_button 'list_space'
+   expect(page).to have_content('Log in to Makersbnb')
+ end
+end
+
 feature 'display listings' do
   scenario 'in reverse chronological order' do
     create_listing

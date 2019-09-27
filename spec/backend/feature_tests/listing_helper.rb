@@ -1,5 +1,6 @@
 def create_listing
-  visit '/spaces'
+  signup
+  login
   click_button 'list_space'
   fill_in 'name', with: 'Stylish'
   fill_in 'description', with: 'City centre apartment'
@@ -10,7 +11,8 @@ def create_listing
 end
 
 def create_another_listing
-  visit '/spaces'
+  signup
+  login
   click_button 'list_space'
   fill_in 'name', with: 'Homely'
   fill_in 'description', with: 'Cosy country cottege'
@@ -18,4 +20,19 @@ def create_another_listing
   fill_in 'available_from', with: '10/11/2019'
   fill_in 'available_to', with: '30/01/2020'
   click_button 'list_space'
+end
+
+def signup
+ visit('/')
+ fill_in 'first_name', with: 'Tom'
+ fill_in 'last_name', with: 'Jones'
+ fill_in 'email', with: 'test@gmail.com'
+ fill_in 'password', with: 'abc123'
+ click_button 'Signup'
+end
+
+def login
+ fill_in 'email', with: 'test@gmail.com'
+ fill_in 'password', with: 'abc123'
+ click_button 'login'
 end

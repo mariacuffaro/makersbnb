@@ -34,6 +34,7 @@ class MakersBnb < Sinatra::Base
 
     post '/login' do
       @user = User.find_by(email: "#{params['email']}")
+      session[:user_id] = @user.id
       if BCrypt::Password.new(@user.password) == params['password']
         redirect '/spaces'
       else flash[:notice] = "Credentials Incorrect"
@@ -65,8 +66,13 @@ class MakersBnb < Sinatra::Base
         end
 
         get '/spaces/new' do
-          erb :spaces_new
-        end
+
+         if  session[:user_id] == nil
+           redirect '/login'
+         end
+         erb :spaces_new
+       end
+
 
 
         get '/spaces/:id' do
@@ -75,10 +81,15 @@ class MakersBnb < Sinatra::Base
           erb :selected_space
         end
 
+        post  '/requests' do
+          p user_id  = session[:user_id]
+          Booking.create(users_id: "#{user_id}",
+                        spaces_id: "#{params[:space_id]}")
+          redirect '/requests'
+        end
 
         get '/requests' do
-         "Requests I've made"
-
+          p @bookings = Booking.all()
           erb :managing_requests
         end
 

@@ -3,12 +3,14 @@
   <div class="card-body">
     <h5 class="card-title"><%=@space.description%></h5>
     <p class="card-text"><%=@space.price%><br>
+      <form action="/requests" method="post">
       <p>start date <input type="text" id="datepicker1" name='start_date' placeholder='<%= @space.available_from.strftime('%d %b %Y') %>' required></p>
       <p>end date <input type="text" id="datepicker2" name='end_date' placeholder='<%= @space.available_to.strftime('%d %b %Y') %>' required></p>
     </p>
     <!-- <a href="#" class="btn btn-primary">Request booking</a> -->
-    <form action="/requests">
+
     <button type='submit' name='request_booking'>Request booking</button>
+    <input type='hidden' name = "space_id" value = "<%=@space.id%>">
   </form>
   </div>
 </div>

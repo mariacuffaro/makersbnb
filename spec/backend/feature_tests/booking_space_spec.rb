@@ -9,7 +9,6 @@ feature 'displaying selected space' do
 
   scenario 'request booking using dates entered' do
     create_another_listing
-    # save_and_open_page
     click_on 'Homely'
     fill_in 'start_date', with: '20-11-2019'
     fill_in 'end_date', with: '25-11-2019'
