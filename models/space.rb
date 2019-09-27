@@ -1,2 +1,3 @@
 class Space < ActiveRecord::Base
-end 
+    has_many :bookings
+end
