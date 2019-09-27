@@ -1,8 +1,8 @@
-<div class="card" style="width: 18rem;">
-  <img class="card-img-top" src="images/makersbnb_header2.jpg" alt="Card image cap">
-  <div class="card-body">
+<div class="card border-primary mb-3" style="max-width: 35rem;">
+  <img class="card-img-top" src="/images/makers.jpg" alt="Card image cap">
+  <div class="card-body text-primary">
     <h5 class="card-title"><%=@space.description%></h5>
-    <p class="card-text"><%=@space.price%><br>
+    <p class="card-text">£<%=@space.price%>.00<br>
       <form action="/requests" method="post">
       <p>start date <input type="text" id="datepicker1" name='start_date' placeholder='<%= @space.available_from.strftime('%d %b %Y') %>' required></p>
       <p>end date <input type="text" id="datepicker2" name='end_date' placeholder='<%= @space.available_to.strftime('%d %b %Y') %>' required></p>

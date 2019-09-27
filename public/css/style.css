@@ -21,11 +21,11 @@ h1 {
   border: 2px grey;
   padding: 10px;
   border-style: solid;
-    border-color: grey;
       border-width: medium;
+      border-radius: 15px;
 }
-input:required {
-
+input {
+ /* width: 50% ; */
 }
 
 .card {
@@ -33,6 +33,5 @@ input:required {
         float: none; /* Added */
         margin-bottom: 10px; /* Added */
         object-fit: contain;
-
-
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2)
 }
