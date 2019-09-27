@@ -47,6 +47,7 @@ class MakersBnb < Sinatra::Base
     end
 
     post '/spaces' do
+      # from here session user_id is nil
       if params['start_date'] == nil
         Space.create(name: "#{params['name']}",
           description: "#{params['description']}",
@@ -65,11 +66,13 @@ class MakersBnb < Sinatra::Base
         end
 
         get '/spaces/new' do
+          p session[:user_id]
           if  session[:user_id] == nil
             redirect '/login'
           end
           erb :spaces_new
         end
+
 
         run! if app_file == $0
       end
