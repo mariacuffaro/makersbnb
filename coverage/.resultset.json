@@ -10,6 +10,18 @@
         1,
         1,
         null,
+        null,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
         null
       ],
       "/Users/student/Desktop/PROJECTS /makersbnb/spec/backend/feature_tests/listing_helper.rb": [
@@ -25,14 +37,14 @@
         null,
         null,
         1,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
         null
       ],
       "/Users/student/Desktop/PROJECTS /makersbnb/spec/backend/feature_tests/listings_feature_spec.rb": [
@@ -136,6 +148,6 @@
         null
       ]
     },
-    "timestamp": 1569513446
+    "timestamp": 1569578927
   }
 }
