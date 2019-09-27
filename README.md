@@ -64,3 +64,12 @@ So that the space is booked
 * setup_prod_connection
 * drop_tables
 * create_tables
+
+## Run/ test instructions
+```
+git clone git@github.com:mariacuffaro/makersbnb.git
+cd makersbnb
+bundle install
+run rspec to test
+rackup to run in localhost 9292
+```
