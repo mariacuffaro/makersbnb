@@ -19,6 +19,26 @@
   <title>MakersBnB</title>
 </head>
 <body>
+  <nav class="navbar navbar-default" style="background-color: ">
+<div class="container-fluid">
+<div class="navbar-header">
+<a class="navbar-brand" href="#">MakersBnB</a>
+</div>
+<ul class="nav navbar-nav">
+<li class="active"><a href="/">Sign up</a></li>
+<li><a href="/login">Log in</a></li>
+<li><a href="/spaces">View Property</a></li>
+<li><a href="/spaces/new">List a space</a></li>
+</ul>
+</div>
+</nav>
+<!-- navbar finishes here -->
+  <div class="jumbotron text-center">
+    <h1>MakersBnB</h1>
+    <p>Welcome to MakersBnB</p>
+     <%# <img src="images/makers.jpg">  %>
+  </div>
+
   <div class="container">
     <div class="row">
       <div class="col-sm-12">
@@ -26,11 +46,8 @@
           <tr>
             <td>
               <div class="center">
-                <div class="jumbotron text-center">
-                  <h1>MakersBnB</h1>
-                  <p>Welcome to MakersBnB</p>
-                   <%# <img src="images/makers.jpg">  %>
-                </div>
+                <!-- navbar starts here -->
+
                 <%= yield %>
               </div>
             </td>
