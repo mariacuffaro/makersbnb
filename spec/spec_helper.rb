@@ -2,6 +2,7 @@ require 'capybara'
 require 'capybara/rspec'
 require 'simplecov'
 require 'simplecov-console'
+
 # require File.join(File.dirname(__FILE__), '..', 'listing_helper.rb')
 ENV['DB_ENV'] = 'test'
 require File.join(File.dirname(__FILE__), '..', 'app.rb')
